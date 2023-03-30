@@ -1,0 +1,14 @@
+.clock {
+  font-feature-settings: 'tnum';
+}
+
+.separator {
+  animation: blinker 1s linear infinite;
+  animation-timing-function: step-start;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

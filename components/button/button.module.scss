@@ -1,0 +1,24 @@
+.button {
+  color: var(--green);
+  font-size: mobile-vw(14px);
+  padding: mobile-vw(4px) mobile-vw(8px);
+  border-radius: mobile-vw(8px);
+  border: 1px solid;
+  text-transform: uppercase;
+  transition: color 300ms var(--ease-out-expo),
+    background-color 300ms var(--ease-out-expo);
+  user-select: none;
+
+  @include desktop {
+    font-size: desktop-vw(16px);
+    padding: desktop-vw(4px) desktop-vw(8px);
+    border-radius: desktop-vw(8px);
+  }
+
+  @include hover {
+    &:hover {
+      color: var(--black);
+      background-color: var(--green);
+    }
+  }
+}
